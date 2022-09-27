@@ -91,6 +91,9 @@ git log --all --decorate --oneline --graph
 # Clear everything
 git clean -dxf
 
+# Clean merged branches
+git branch --merged | grep -v \* | xargs git branch -D
+
 # Sign all commits in a branch based on master
 git rebase master -S -f
 
