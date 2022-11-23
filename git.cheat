@@ -1,0 +1,19 @@
+% git commit, gg
+# Commit
+git commit -m "<type>: <message>"
+$ type: echo -e "fix\nfeat"
+
+# Commit No Verify
+git commit -m "<type>: <message>" --no-verify
+$ type: echo -e "fix\nfeat"
+
+% git, gco
+# Change branch
+git checkout <branch>
+$ branch: git branch | awk '{print $NF}'
+
+# View Current Branch
+% git, branch
+echo <branch>
+$ branch: echo $(git symbolic-ref HEAD 2>/dev/null | cut -d"/" -f 3)
+

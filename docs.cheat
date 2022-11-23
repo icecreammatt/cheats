@@ -1,0 +1,4 @@
+% url, fav
+# open favorite urls
+open "<url>"
+$ url: cat ~/.config/navi/urls.txt --- --header-line 0 --multi --column 2 --delimiter ' '

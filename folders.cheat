@@ -1,0 +1,9 @@
+% source
+# Jump to source 
+cd ~/Source/
+
+% cd, fav
+# open favorite directories
+cd <dir>
+$ dir: cat ~/.navi/directories.txt --- --header-line 0 --multi --column 2 --delimiter ' '
+
