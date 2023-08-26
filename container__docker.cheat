@@ -15,6 +15,9 @@ docker rmi $(docker images --filter "dangling=true" -q --no-trunc) -f
 # List all images that are locally stored with the Docker engine
 docker images
 
+# Inspect Container layers
+dive
+
 # Build an image from the Dockerfile in the current directory and tag the image
 docker build -t <image>:<version> .
 
